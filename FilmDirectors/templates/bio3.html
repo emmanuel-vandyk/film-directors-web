@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin Scorcese</title>
+  {% load static %}
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="shortcut icon" href="{% static 'sensacine.ico' %}" type="image/x-icon">
+</head>
+
+
+<body class="content">
+  <h1 class="title">Martin Scorcese</h1>
+  <div class="marco-img">
+    <img class="photo" src="{% static 'assets/martin-scorcese.jpg' %}" alt="martin-scorcese">
+  </div>
+  {% block content %}
+  
+  <p class="texto">{{biography}}</p>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>FILMS</th>
+    </tr>
+    {% for x in filmography %}
+      {% if x.id > 23 and x.id < 41 %}
+      <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.filmName}}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+  </table><br>
+
+  {% endblock %}
+</body>
+</html>

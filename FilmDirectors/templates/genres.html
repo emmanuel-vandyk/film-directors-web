@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+    <h1 class="title-views">Film Genres</h1>
+    {% for genres in object_list %}
+    <ul class="sidebar-nav">
+        <li>
+            <a href="{{ genres.Genre }}">{{genres.id}} {{genres.genreName}}</a> 
+        </li>
+    </ul>
+    {% endfor %}
+
+{% endblock %}

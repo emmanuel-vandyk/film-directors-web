@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christopher Nolan</title>
+  {% load static %}
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="shortcut icon" href="{% static 'sensacine.ico' %}" type="image/x-icon">
+</head>
+
+
+<body class="content">
+  <h1 class="title">Christopher Nolan</h1>
+  <div class="marco-img">
+    <img class="photo" src="{% static 'assets/nolan.jpg' %}" alt="nolan">
+  </div>
+  {% block content %}
+  
+  <p class="texto">{{biography}}</p>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>FILMS</th>
+    </tr>
+    {% for x in filmography %}
+      {% if x.id > 52 and x.id < 59 %}
+      <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.filmName}}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+  </table><br><br>
+
+  {% endblock %}
+</body>
+</html>

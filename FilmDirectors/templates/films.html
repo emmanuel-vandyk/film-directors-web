@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+    {% block content %}
+
+        <h1 class="title-views">Films</h1>
+        {% for films in object_list %}
+        <ul class="sidebar-nav">
+
+            <th>{{ films.id }}. {{ films }}</th>
+            <tbody style="border: 1em black;">{{ films.releaseYear }}, {{ film.genreName }} </tbody> 
+
+        </ul>
+
+        {% endfor %}
+
+    {% endblock %}

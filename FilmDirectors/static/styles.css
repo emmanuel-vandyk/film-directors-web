@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+* {
+    background-color: yellow;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    font-weight: bolder;
+    max-width: 100%;
+}
+
+.sidebar-nav {
+    margin-top: 20px;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILOS BIOGRAFIA */
+
+.title {
+    text-align: center;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem black;
+}
+
+.texto {
+    text-align: center;
+    width: 70vw;
+}
+
+.photo {
+    width: 50vw;
+    border-radius: 0.5rem;
+}
+
+/* ESTILOS FILMS */
+.films {
+    width: 30vw;
+    height: 100vh;
+    border-style: 2px solid black;
+    border-radius: 1rem;
+}

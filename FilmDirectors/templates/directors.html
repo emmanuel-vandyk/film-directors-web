@@ -1,0 +1,48 @@
+{% extends "base_generic.html" %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directores de cine</title>
+</head>
+
+<body>
+
+    {% block content %}
+    <h1 class="col-lg-12">Directores de cine</h1>
+    <br>
+    <div>
+        <ol>
+            <li>
+                <p>Steven Spielberg</p><a href="{% url 'bio1' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Stanley Kubrick</p><a href="{% url 'bio2' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Martin Scorcese</p><a href="{% url 'bio3' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Francis Ford Coppola</p><a href="{% url 'bio4' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>James Cameron</p><a href="{% url 'bio5' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Christopher Nolan</p><a href="{% url 'bio6' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Quentin Tarantino</p><a href="{% url 'bio7' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>John Carpenter</p><a href="{% url 'bio8' %}">Biography</a>
+            </li><br>
+            <li>
+                <p>Ingmar Bergman</p><a href="{% url 'bio9' %}">Biography</a>
+            </li><br>
+        </ol>
+    </div>
+</body>
+
+</html>
+
+{% endblock %}

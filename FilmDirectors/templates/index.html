@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+    {% block content %}
+    <h1>Directors & films</h1>
+
+        <p>Welcome to <em>Directors & Films</em>, a very basic Django website developed as a tutorial example</p>
+
+    <h2>Dynamic content</h2>
+
+        <p>The list has the following record counts:</p>
+        <ul>
+            <li><strong>Directors:</strong> {{ num_directors }}</li>
+            <li><strong>Films:</strong> {{ num_films }}</li>
+            <li><strong>Genres:</strong> {{ num_genres }}</li>
+        </ul>
+
+    {% endblock %}
